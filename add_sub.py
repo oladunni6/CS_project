@@ -14,7 +14,7 @@ def main():
     addition = num1 + num2
     subtraction = num1 - num2
 
-    # Print the results
+    #Print the results
     print(f"The sum of {num1} and {num2} is: {addition}")
     print(f"The difference when {num2} is subtracted from {num1} is: {subtraction}")
 
