@@ -1,10 +1,18 @@
-def is_prime(num: int) -> bool:
-    if num <= 1:
-        return False
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
+class Car:
+   def __init__(self, color, model):
+       self.color = color        
+       self.__model = model      
 
-print(is_prime(11))  # Output: True
-print(is_prime(4))   # Output: False
+
+   def move(self):
+       return f"The {self.color} car is moving."
+
+
+   def get_model(self):
+       return self.__model       
+
+
+my_car = Car("white", "Mercedes Benz")
+print(my_car.color) 
+print(my_car.get_model()) 
+print(my_car.move())
