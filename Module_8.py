@@ -76,16 +76,16 @@ def print_menu(cart):
 def main():
     item1 = ItemToPurchase()
     item1.item_name = input("Item 1\nEnter the item name:\n")
-    item1.item_price = float(input("Enter the item price:\n"))
-    item1.item_quantity = int(input("Enter the item quantity:\n"))
+    item1.item_price = (input("Enter the item price:\n"))
+    item1.item_quantity = (input("Enter the item quantity:\n"))
 
     item2 = ItemToPurchase()
     item2.item_name = input("Item 2\nEnter the item name:\n")
-    item2.item_price = float(input("Enter the item price:\n"))
-    item2.item_quantity = int(input("Enter the item quantity:\n"))
+    item2.item_price = (input("Enter the item price:\n"))
+    item2.item_quantity = (input("Enter the item quantity:\n"))
 
     total_cost = item1.item_price * item1.item_quantity + item2.item_price * item2.item_quantity
-    print("\nTOTAL COST")
+    print("\nTotal Cost")
     item1.print_item_cost()
     item2.print_item_cost()
     print(f"Total: ${total_cost}")
